@@ -1,0 +1,56 @@
+Overall
+
+Minimal approach that lets the products speak for themselves. 
+
+Splash
+
+You'll be able to collate arbitrary lists of products (sales, seasonal collections) and feature them here, or choose from any existing content on the site – brands, product categories, individual products, journal entries. Eight links to content are displayed simultaneously with equal importance, so you don't have to agonize over a single image being perfect. These links provide a range of starting points and inspirations for curious customers.
+
+The image currently under the cursor expands, which gives us the best of both worlds – individual images can be shown large, clear and impactful, and the collection of images gives a well-rounded overview of Kinoko's ethos and style. Customers can browse through featured items in a smooth, click-free way.
+
+Clicking on the Kinoko logo or scrolling down dismisses the splash screen and brings you directly to Products. The site's menu is accessible for those looking for something specific.
+
+Products
+
+This template, with minor variations, is used to display any collection of products: categories, brands, sales, seasonal lists.
+
+Reflecting the style of your product photography, we've endeavoured to keep this page ruthlessly light and functional, with a bare minimum of text. Product imagery fills the majority of the screen in a utalitarian grid. Product names and prices are only visible on hover. This allows an uncluttered, distraction-free browsing where the products themselves do the talking.
+
+To the left, a sidebar provides rapid navigation between brands and categories without leaving the grid view. Depending on the number of products displayed, the grid varies automatically between 3 and 5 columns.
+
+Optionally, a written introduction may appear at the top of the page to provide information about a brand or curated list.
+
+The products around the mouse cursor enlarge subtly in a reference to the homepage.
+
+
+
+
+    Brand / Category
+    
+    Single
+    
+    When viewing a single product, images are displayed at a generously huge and detailed size, using the same mechanic as the homepage to slide between them. Written product information and buy buttons are displayed at the left; moving the cursor to this section expands it, revealing more in-depth information about the brand. Clicking an image expands it to a full-screen zoomed view, where all the fine details of the product can be appreciated.
+
+
+Menu
+
+The menu is comprehensive, providing links to every page, brand or category on the site. The menu also houses a mini-shopping cart, allowing customers to quickly and easily view or edit the contents of their cart as they shop instead of interrupting them to go to a specific cart page. The menu button itself displays the number of items in the cart (if any).
+
+
+Journal
+    
+    Streamlined
+    Images are larger and more 
+
+
+We've 
+
+    Single
+    
+
+Mobile
+
+
+Typeface 
+
+    For the typographic system of the site we have chosen a pairing of two variations of Atlas from Commercial Type; Grotesk and Typewriter. Throughout the site we alternate between the two, for information about a product we use Grotesk for its simple and to the point functionality. For the narrative and backstory of a product, we switch to Typewriter. This is carried over to the journal entries that tell more of the story.e

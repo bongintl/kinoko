@@ -1,0 +1,215 @@
+$cream: #f5f5ed;
+$red: #D9272E;
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: $cream;
+}
+
+.grid {
+    
+    &_home {
+        
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        
+        .grid__item {
+            
+            width: 25%;
+            height: 50%;
+            transition: opacity 1s;
+            cursor: pointer;
+            
+            &:hover {
+            //    opacity: .5;
+            }
+            
+        }
+        
+    }
+    
+    &_overview {
+        
+        width: 83%;
+        margin-left: 17%;
+        margin-top: 10%;
+        height: 200vw;
+        position: relative;
+        
+        .grid__item {
+            
+            width: 16vw;
+            height: 22vw;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+        
+    }
+    
+    &_detail {
+        
+        $info-width: 50%;
+        
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        
+        .grid__item {
+            
+            &:first-child {
+                width: $info-width;
+            }
+            
+            width: ( 100% - $info-width ) / 6;
+            height: 100%;
+            
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 1em;
+                right: 0;
+                bottom: 0;
+                width: 1px;
+                background: $red;
+            }
+            
+            @for $i from 1 through 10 {
+                
+                &:nth-child(#{$i}) {
+                    
+                    z-index: 10 - $i;
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    &__item {
+        
+        float: left;
+        background-size: cover;
+        background-position: center center;
+        overflow: hidden;
+        
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: red;
+            margin: 0;
+            text-align: center;
+            width: 25vw;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        
+        &:hover h2 {
+            opacity: 1;
+        }
+        
+    }
+    
+}
+
+.home-logo {
+    
+    width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.corner-logo {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    z-index: 1000;
+    
+}
+
+.product-info {
+    background: $cream;
+    color: $red;
+    z-index: 200;
+}
+
+.fixed-center{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vh;
+    height: 80vh;
+}
+
+.carousel {
+    
+    &.cursor-left {
+        cursor: w-resize;
+    }
+    
+    &.cursor-right {
+        cursor: e-resize;
+    }
+    
+    &__slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        transition: width .5s, left .5s;
+        
+        &.off-left {
+            width: 0;
+            z-index: 10;
+        }
+        
+        &.off-right {
+            width: 0;
+            z-index: 10;
+            left: 100%;
+        }
+        
+        &.peep-left {
+            width: 10%;
+        }
+        
+        &.peep-right {
+            width: 10%;
+            left: 90%;
+        }
+        
+    }
+    
+}
+
+.sidebar {
+    position: fixed;
+    background: $red;
+    width: 17%;
+    height: 100%;
+    top: 0;
+}
